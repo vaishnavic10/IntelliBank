@@ -1,146 +1,77 @@
-IntelliBank – Banking Management System
-Overview
+# IntelliBank – Banking Management System
 
-IntelliBank is a secure Banking Management System built using Core Java, JDBC, SQL, and JWT authentication. The application allows users to perform basic banking operations such as account creation, deposits, withdrawals, and transaction tracking while ensuring secure authentication and database management.
+## 📌 Overview
 
-The project demonstrates object-oriented programming, database connectivity, and secure authentication practices used in backend banking applications.
+**IntelliBank** is a secure **Banking Management System** built using **Core Java, JDBC, SQL, and JWT authentication**. The application allows users to perform basic banking operations such as account creation, deposits, withdrawals, and transaction tracking while ensuring secure authentication and database management.
 
-Features
+The project demonstrates **object-oriented programming, database connectivity, and secure authentication practices** used in backend banking applications.
 
-User registration and secure login
+---
 
-JWT-based authentication for secure access
+## 🚀 Features
 
-Create and manage bank accounts
+- User registration and secure login
+- JWT-based authentication for secure access
+- Create and manage bank accounts
+- Deposit and withdraw money
+- View account balance
+- Transaction history tracking
+- Secure database storage using SQL
+- Data handling using JDBC connectivity
 
-Deposit and withdraw money
+---
 
-View account balance
+## 🛠 Tech Stack
 
-Transaction history tracking
+| Technology | Description |
+|------------|-------------|
+| Core Java | Application logic and backend processing |
+| JDBC | Database connectivity |
+| MySQL / SQL | Data storage |
+| JWT | Secure authentication |
+| OOP | Modular and scalable design |
 
-Secure database storage using SQL
+Concepts Used:
+- Object-Oriented Programming
+- Exception Handling
+- File Handling
+- Secure Session Management
 
-Data handling using JDBC connectivity
+---
 
-Tech Stack
+## 🏗 System Architecture
 
-Programming Language: Core Java
+The application follows a **modular architecture** where different components handle authentication, banking operations, and database interaction.
 
-Database Connectivity: JDBC
+### Modules
 
-Database: MySQL / SQL
+- **Authentication Module** – Handles JWT login and validation
+- **Account Management Module** – Handles account creation and balance
+- **Transaction Module** – Handles deposits, withdrawals, and history
+- **Database Connectivity Module** – Handles JDBC connections
 
-Authentication: JSON Web Token (JWT)
+---
+## 🔮 Future Enhancements
 
-Concepts Used: OOP, Exception Handling, File Handling, Secure Session Management
+- Web-based interface using Spring Boot
 
-System Architecture
+- OTP-based authentication
 
-The application follows a modular architecture where different components handle authentication, banking operations, and database interaction.
+- Loan management system
 
-Modules:
+- Investment advisor module
 
-Authentication Module (JWT login & validation)
+- Admin dashboard
 
-Account Management Module
+- REST API integration
 
-Transaction Module
-
-Database Connectivity Module (JDBC)
-
-Project Structure
-IntelliBank/
-│
-├── src/
-│   ├── auth/
-│   │   └── JWTAuthentication.java
-│   │
-│   ├── database/
-│   │   └── DBConnection.java
-│   │
-│   ├── model/
-│   │   └── Account.java
-│   │
-│   ├── service/
-│   │   ├── AccountService.java
-│   │   └── TransactionService.java
-│   │
-│   └── IntelliBankApp.java
-│
-├── database/
-│   └── bank_schema.sql
-│
-└── README.md
-Database Tables
-
-Example tables used in the system:
-
-Users Table
-
-user_id
-
-username
-
-password
-
-role
-
-Accounts Table
-
-account_id
-
-user_id
-
-account_type
-
-balance
-
-Transactions Table
-
-transaction_id
-
-account_id
-
-type
-
-amount
-
-date
-
-How to Run the Project
-
-Clone the repository
-
-git clone https://github.com/yourusername/intellibank.git
-
-Import the project into your IDE (IntelliJ / Eclipse / VS Code).
-
-Set up the SQL database and run the schema file.
-
-Configure database credentials in the DBConnection.java file.
-
-Compile and run the main application file:
-
-IntelliBankApp.java
-Future Enhancements
-
-Web-based interface using Spring Boot
-
-OTP-based authentication
-
-Loan and investment modules
-
-Admin dashboard for bank employees
-
-REST API integration
-
-Author
+## 👩‍💻 Author
 
 Vaishnavi Chopade
-Software Engineer | Java Backend Developer | MERN Stack
 
-⭐ If you like this project, consider giving it a star!
+Software Engineer
+Java Backend Developer | MERN Stack Developer
 
+⭐ If you like this project, consider giving it a star on GitHub.
 
 
