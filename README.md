@@ -1,63 +1,146 @@
-## 🏨 SmartLodge - Hotel Reservation System
+IntelliBank – Banking Management System
+Overview
 
-A robust and secure hotel reservation management system built with Java, JDBC, and MySQL. SmartLodge provides a comprehensive solution for managing room bookings with enterprise-grade security and performance optimization.
+IntelliBank is a secure Banking Management System built using Core Java, JDBC, SQL, and JWT authentication. The application allows users to perform basic banking operations such as account creation, deposits, withdrawals, and transaction tracking while ensuring secure authentication and database management.
 
----
+The project demonstrates object-oriented programming, database connectivity, and secure authentication practices used in backend banking applications.
 
-## 🌟 Features
+Features
 
-- Complete Reservation Management: Create, view, update, and delete room reservations
-- Real-time Data Transactions: MySQL integration for instant booking updates
-- SQL Injection Protection: Parameterized queries using PreparedStatement
-- Performance Optimized: 40% improvement in system performance through efficient database operations
-- Error Reduction: 40% decrease in booking errors through validation and transaction management
-- Modular Architecture: Object-oriented design with 60%+ improvement in code maintainability
-  
----
+User registration and secure login
 
-## 🚀 Technology Stack
+JWT-based authentication for secure access
 
-- Backend: Java
-- Database: MySQL
-- Database Connectivity: JDBC
-- Design Pattern: Object-Oriented Programming (OOP)
-  
----
+Create and manage bank accounts
 
-## 📋 Prerequisites
+Deposit and withdraw money
 
-Before running this project, ensure you have the following installed:
+View account balance
 
-- Java Development Kit (JDK) 8 or higher
-- MySQL Server 5.7 or higher
-- MySQL Connector/J (JDBC Driver)
-  
----
+Transaction history tracking
 
-## 📊 Performance Optimizations
+Secure database storage using SQL
 
-- Connection Pooling: Efficient database connection management
-- MongoDB Aggregation: Optimized queries improving performance by 40%
-- Indexed Database Columns: Fast retrieval of reservation data
-- Prepared Statement Caching: Reduced query compilation overhead
+Data handling using JDBC connectivity
 
----
+Tech Stack
 
-## 🎯 Key Achievements
+Programming Language: Core Java
 
-- ✅ 40% improvement in system performance
-- ✅ 40% reduction in booking errors
-- ✅ 60%+ improvement in code maintainability
-- ✅ 100% protection against SQL injection
-- ✅ Real-time data synchronization
+Database Connectivity: JDBC
 
----
+Database: MySQL / SQL
+
+Authentication: JSON Web Token (JWT)
+
+Concepts Used: OOP, Exception Handling, File Handling, Secure Session Management
+
+System Architecture
+
+The application follows a modular architecture where different components handle authentication, banking operations, and database interaction.
+
+Modules:
+
+Authentication Module (JWT login & validation)
+
+Account Management Module
+
+Transaction Module
+
+Database Connectivity Module (JDBC)
+
+Project Structure
+IntelliBank/
+│
+├── src/
+│   ├── auth/
+│   │   └── JWTAuthentication.java
+│   │
+│   ├── database/
+│   │   └── DBConnection.java
+│   │
+│   ├── model/
+│   │   └── Account.java
+│   │
+│   ├── service/
+│   │   ├── AccountService.java
+│   │   └── TransactionService.java
+│   │
+│   └── IntelliBankApp.java
+│
+├── database/
+│   └── bank_schema.sql
+│
+└── README.md
+Database Tables
+
+Example tables used in the system:
+
+Users Table
+
+user_id
+
+username
+
+password
+
+role
+
+Accounts Table
+
+account_id
+
+user_id
+
+account_type
+
+balance
+
+Transactions Table
+
+transaction_id
+
+account_id
+
+type
+
+amount
+
+date
+
+How to Run the Project
+
+Clone the repository
+
+git clone https://github.com/yourusername/intellibank.git
+
+Import the project into your IDE (IntelliJ / Eclipse / VS Code).
+
+Set up the SQL database and run the schema file.
+
+Configure database credentials in the DBConnection.java file.
+
+Compile and run the main application file:
+
+IntelliBankApp.java
+Future Enhancements
+
+Web-based interface using Spring Boot
+
+OTP-based authentication
+
+Loan and investment modules
+
+Admin dashboard for bank employees
+
+REST API integration
+
+Author
 
 Vaishnavi Chopade
-- GitHub: https://github.com/vaishnavic10
-- LinkedIn: https://www.linkedin.com/in/vaishnavi-chopade-624110287/
+Software Engineer | Java Backend Developer | MERN Stack
 
-📧 Contact
-- For any queries or support, please reach out to: vaishnavichopade316@gmail.com
+⭐ If you like this project, consider giving it a star!
 
-⭐ Star this repository if you find it helpful!
+
+
